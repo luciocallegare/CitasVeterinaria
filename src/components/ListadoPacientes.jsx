@@ -9,7 +9,7 @@ const ListadoPacientes = ( { pacientes } ) => {
         <span className="text-indigo-600 font-bold">Pacientes y Citas</span>
       </p>
 
-      { pacientes.map( paciente =>  <Paciente paciente= {paciente}/>)}
+      { pacientes.map( paciente =>  <Paciente key={paciente.id} paciente= {paciente}/>)}
     </div>
   )
 }
